@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorenos!</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="rayo_icono/svg" href="../icono.svg">
+    <style>
+        body {
+            font-family: Raleway, "Raleway", "Helvetica Neue", Calibri, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+	    //font-size: 22px; /* Ajusta el tamaño de fuente según sea necesario */
+            background-color: #FFFAF5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+        }
+            font-weight: bold; /* Aplica negrita */
+	}
+
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #aaa;
+            text-decoration: none;
+            width: 200px;
+        }
+
+        .secondary-menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .secondary-menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .secondary-menu a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .secondary-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	    font-family: Raleway
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .option {
+            flex-basis: calc(20% - 20px);
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .option:hover {
+            background-color: #e0e0e0;
+        }
+        .option img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .option a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        form {
+            margin-top: 50px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+	footer {        
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+	.highlight {
+            color: #ff8c00; /* Color de resaltado */	
+	}
+
+	.lowlight {
+	    color: #FFB37D;  /*naranja suave*/
+	}
+
+
+    </style>
+</head>
+<body>
+<header>
+        <h1>YOUR GYM APP</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#clases">Clases</a></li>
+                <li><a href="../index.html#calendario">Calendario</a></li>
+                <li><a href="../instalaciones.html"><b>Instalaciones</b></a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+                <li><a href="../registro.html"><span class="lowlight">REGISTRATE!</span></a></li>
+            </ul>
+            <!-- Línea secundaria -->
+            <ul class="secondary-menu">
+                <li><a href="aforos/aforos.html">Aforo de las Salas</a></li>
+                <li><a href="gimnasio3.html">Comunidad Virtual</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="valorar.html"><b>Valoranos</a></b></li>
+                <li><a href="mapa.html">Ubicación</a></li>
+            </ul>
+        </nav>
+	    <th width="300" align="center" valign="middle">
+	    <p id="reloj" style="color:#fff">00:00:00</p>
+                
+		<script src="../script_reloj.js"></script>
+            </th>
+    </header>
+
+    <div class="container">
+        <h1>Valorenos!</h1>
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="estrellas">Número de Estrellas:</label>
+            <select id="estrellas" name="estrellas" required>
+                <option value="1">★</option>
+                <option value="2">★★</option>
+                <option value="3">★★★</option>
+                <option value="4">★★★★</option>
+                <option value="5">★★★★★</option>
+            </select>
+            <label for="opinion">Opinión:</label>
+            <textarea id="opinion" name="opinion" rows="4" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <footer>
+        <p>YOUR GYM APP &copy; 2024<br>
+        Alejandro González ~ Adela Dans</p>
+    </footer>
+</body>
+</html>
