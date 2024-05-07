@@ -1,0 +1,212 @@
+body {
+    font-family: Raleway, "Raleway", "Helvetica Neue", Calibri, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    //font-size: 22px; /* Ajusta el tamaño de fuente según sea necesario */
+    background-color: #FFFAF5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center; /* Para centrar el texto */
+}
+
+header h1 {
+    font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+    font-weight: bold; /* Aplica negrita */
+}
+
+
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+     list-style-type: none;
+    //list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #aaa;		/*color letras*/
+    text-decoration: none;
+    width: 200px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+    display: inline; /* Cambiado a "inline" para mostrar los elementos en la misma línea */
+}
+
+nav ul li ul li {
+    display: inline; /* Cambiado a "inline" para mostrar los elementos en la misma línea */
+    margin: 0;
+}
+
+nav ul li ul li a {
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    color: #aaa;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: #FFFAF5;
+}
+
+h2 {
+	text-align: center;
+}
+
+footer {		
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    //position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+.sangria {
+            text-indent: 20px; /* Ajusta el valor según el nivel de sangría que desees */
+}
+
+.highlight {
+            color: #ff8c00; /* Color de resaltado */	
+}
+.lowlight {
+	    color: #FFB37D;  /*naranja suave*/
+}
+
+.center-container {
+    text-align: center;
+    margin-top: 60px; /* Añade un poco de espacio en la parte superior */
+}
+
+table {
+            margin: 0 auto; /* Centra la tabla horizontalmente */
+            border-collapse: collapse /* Combina los bordes de las celdas */
+	    text-align: center;
+        }
+
+th, td {
+            border: 1px solid #ddd; /* Establece el borde de las celdas */
+            padding: 8px; /* Añade espaciado interno a las celdas */
+            text-align: center; /* Centra el contenido de las celdas */
+        }
+
+Yoga {
+            background-color: #ffcc00; /* Asigna el color amarillo para la clase de Yoga */
+        }
+
+.Pilates {
+            background-color: #66cdaa; /* Asigna el color verde agua para la clase de Pilates */
+        }
+
+.CrossFit {
+            background-color: #ff6666; /* Asigna el color rojo claro para la clase de CrossFit */
+        }
+------------------
+
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centro los meses horizontalmente */
+}
+
+.row {
+    width: 50%; /* Cada fila ocupa el ancho completo */
+    display: flex;
+    justify-content: center; /* Espacio entre los meses */
+    //margin-bottom: 20px;
+}
+
+.month {
+    flex: 1; /* Cada mes ocupa el mismo espacio en la fila */
+    //border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.month-name {
+    background-color: aliceblue;
+    text-align: center;
+    margin-top: 0;
+    padding: 5px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: center;
+    //background-color: #f0f0f0;
+    padding: 5px;
+}
+
+.day-of-week {
+    flex: 3;
+    text-align: center;
+    padding: 5px; /* Corregido el error de tipografía en "padding" */
+    font-weight: bold; /* Agregamos la propiedad para hacer el texto en negrita */
+}
+
+
+.week {
+    display: flex;
+    //flex-wrap: wrap;
+}
+
+.day {
+    flex: 1;
+    //border: 1px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    //margin-bottom: 5px;
+}
+
+.empty {
+    visibility: hidden;
+}
+-----------
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+-----------
+.redes-sociales a i {
+            font-size: 400px; /* Ajusta el tamaño de los iconos según sea necesario */
+            margin-right: 500px; /* Añade un margen derecho para separar los iconos */
+}

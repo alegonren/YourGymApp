@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR GYM APP</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="display/styles_display.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <!-- Cambio en el tipo de icono -->
+    <link rel="icon" type="image/svg+xml" href="icono.svg">
+
+</head>
+<body>
+
+    <script src="script_index.js"></script>
+
+    <header>
+        <h1>YOUR GYM APP</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio"><b>Inicio</b></a></li>
+                <li><a href="#clases">Clases</a></li>
+                <li><a href="#calendario">Calendario</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a>
+                    <ul>
+                        <li><a href="gimnasio1/gimnasio1.html">YOUR GYM Multiusos</a></li>
+                        <li><a href="gimnasio2/gimnasio2.html">YOUR GYM Vallehermoso</a></li>
+                        <li><a href="gimnasio3/gimnasio3.html">YOUR GYM Aldehuela</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="registro.html">REGISTRATE!</a></li>
+            </ul>
+        </nav>
+
+        <!-- Eliminado el ancho del th y movido el script de reloj al final del body -->
+        <th align="right" valign="middle">
+            <p id="reloj" style="color:#fff">00:00:00</p>
+        </th>
+
+    </header>
+    <main>
+        <section id="inicio">
+            <!-- Cambiado el cierre del encabezado a h2 -->
+            <h2>Bienvenido a YOUR GYM APP</h2>
+            <p>Solución digital para los desafíos del gimnasio</p>
+            <p>¡Estamos aquí para <span class="highlight">resolver</span> tus problemas de entrenamiento!</p>
+
+            <div class="carousel">
+                <!-- Resto del código del carrusel -->
+            </div>
+
+            <p>Y estate atento, porque <span class="highlight">nuestro camino apenas comienza</span>.</p>
+            <p>¡Gracias por ser parte de YOUR GYM APP!</p>
+        </section>
+
+        <section id="clases">
+            <div class="center-container">
+                <h1>Horarios del Gimnasio</h1>
+                <p>A continuación se muestran los horarios de las actividades del gimnasio durante la semana:</p>
+
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                    <!-- Agregado un comentario en inglés -->
+                    <script>
+                        // Iterate over the JSON object and generate table rows
+                        // Define 'horariosGimnasio' object with schedule data
+                        for (var dia in horariosGimnasio) {
+                            document.write("<tr>");
+                            document.write("<td>" + dia + "</td>");
+
+                            //Iterate over activities for each day
+                            for (var actividad in horariosGimnasio[dia]) {
+                                document.write("<td>" + horariosGimnasio[dia][actividad] + "</td>");
+                            }
+
+                            // If there's no activity for a day, place an empty cell
+                            var numActividades = Object.keys(horariosGimnasio[dia]).length;
+                            for (var i = numActividades; i < 5; i++) {
+                                document.write("<td></td>");
+                            }
+
+                            document.write("</tr>");
+                        }
+
+                        // Function to get the CSS class associated with each activity
+                        function obtenerClaseCSS(actividad) {
+                            switch (actividad) {
+                                case "Yoga":
+                                    return "Yoga";
+                                case "Pilates":
+                                    return "Pilates";
+                                case "CrossFit":
+                                    return "CrossFit";
+                                // Add more cases for other types of activities here
+                                default:
+                                    return "";
+                            }
+                        }
+                    </script>
+                </table>
+            </div>
+        </section>
+
+        <section id="calendario">
+            <h2>Calendario de Clases</h2>
+            <!-- Moved the alignment style to CSS -->
+            <div style="display: flex; justify-content: center;">
+                <div id="calendar"></div>
+            </div>
+            <script src="calendar.js"></script>
+        </section>
+
+        <section id="contacto">
+            <h2>Información de contacto</h2>
+            <!-- Resto del código de contacto -->
+        </section>
+    </main>
+
+    <footer>
+        <p>YOUR GYM APP &copy; 2024<br>
+        Alejandro González ~ Adela Dans</p>
+    </footer>
+    <!-- Script de reloj movido al final del body -->
+    <script src="script_reloj.js"></script>
+</body>
+</html>

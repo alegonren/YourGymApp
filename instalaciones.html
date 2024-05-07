@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <link rel="icon" type="rayo_icono/svg" href="icono.svg">
+    <title>Instalaciones de YOUR GYM</title>
+    <style>
+        body {
+            font-family: Raleway, "Raleway", "Helvetica Neue", Calibri, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            //font-size: 22px; /* Ajusta el tamaño de fuente según sea necesario */
+            background-color: #FFFAF5; /* Color de fondo */
+        }
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center; /* Para centrar el texto */
+}
+
+header h1 {
+    font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+    font-weight: bold; /* Aplica negrita */
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+     list-style-type: none;
+    //list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #aaa;		/*color letras*/
+    text-decoration: none;
+    width: 200px;
+}
+
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .gimnasio {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centra el contenido */
+        }
+        .gimnasio img {
+            width: 500px; /* Ancho del 100% del contenedor */
+            height: auto; /* Altura automática para mantener la relación de aspecto */
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .pie-foto {
+            margin-top: 10px;
+            font-size: 16px; /* Tamaño de fuente más grande para el pie de foto */
+            color: #888;
+            padding: 15px; /* Espaciado adicional para mejorar la legibilidad */
+        }
+        
+        .titulo-foto {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+	footer {		
+    		background-color: #333;
+    		color: #fff;
+    		text-align: center;
+    		padding: 10px 0;
+    		//position: fixed;
+    		bottom: 0;
+    		width: 100%;
+		font-size: 12px;
+	}
+.secondary-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.secondary-menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.secondary-menu a {
+    color: #666; /* Color más claro para la línea secundaria */
+    text-decoration: none;
+}
+
+.secondary-menu a:hover {
+    text-decoration: underline;
+}
+.highlight {
+            color: #ff8c00; /* Color de resaltado */	
+}
+.lowlight {
+	    color: #FFB37D;  /*naranja suave*/
+}
+    </style>
+</head>
+<body>
+     <header>
+        <h1>YOUR GYM APP</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Clases</a></li>
+                <li><a href="index.html">Calendario</a></li>
+		<li><b><a href="instalaciones.html">Instalaciones</b></a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+		<li><a href="registro.html"><span class="lowlight">REGISTRATE!</span></a></li>
+            </ul>
+	    <!-- Línea secundaria -->
+            <ul class="secondary-menu">
+            	<li><a href="gimnasio1/gimnasio1.html">YOUR GYM · Multiusos</a></li>
+           	<li><a href="gimnasio2/gimnasio2.html">YOUR GYM · Vallehermoso</a></li>
+	        <li><a href="gimnasio3/gimnasio3.html">YOUR GYM · Aldehuela</a></li>
+            </ul>
+        </nav>
+
+	<th width="300" align="right" valign="middle">
+		<p id="reloj" style="color:#fff">00:00:00</p>
+                
+		<script src="script_reloj.js"></script>
+        </th>
+    </header>
+
+    <div class="container">
+	<br>
+        <div class="gimnasio">
+	    <h2 class="titulo-foto">YOUR GYM · Multiusos Sánchez Paraiso</h2>
+            <a href="gimnasio1/gimnasio1.html">
+                <img src="imagenes/gimnasio2.jpg">
+            </a>
+            <p class="pie-foto">Avenida de los Cipreses, s/n, 37004 Salamanca <br> 2002</p>
+        </div>
+        <div class="gimnasio">
+	    <h2 class="titulo-foto">YOUR GYM · Vallehermoso</h2>
+            <a href="gimnasio2/gimnasio2.html">
+                <img src="imagenes/gimnasio1.jpg">
+            </a>
+            <p class="pie-foto">Avda. de Filipinas, 7, 28003, Madrid <br>2018</p>
+        </div>
+        <div class="gimnasio">
+	    <h2 class="titulo-foto">YOUR GYM · La Aldehuela</h2>
+            <a href="gimnasio3/gimnasio3.html">
+                <img src="imagenes/gimnasio3.jpeg" alt="Gimnasio 3">
+            </a>
+            <p class="pie-foto">Av. de la Aldehuela, S/N, 37003 Salamanca <br>2016</p>
+        </div>
+    </div>
+    <footer>
+        <p>YOUR GYM APP &copy; 2024<br>
+	Alejandro González ~ Adela Dans</p>
+    </footer>
+</body>
+</html>
