@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de aforos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Raleway, Arial, sans-serif;
+            //background-color: #f0f0f0;
+	    background-color: #FFFAF5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	    //display: grid;
+	    grid-template-columns: repeat(3, 1fr);
+	    grid-gap: 20px;
+        }
+        h1 {
+	    font-family: "Raleway", "Helvetica Neue";
+            color: #333;
+        }
+        .options {
+            //display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+	    display: grid;
+	    grid-template-columns: repeat(3, 1fr);
+	    grid-gap: 20px;
+        }
+        .option {
+            flex-basis: calc(20% - 20px);
+            background-color: #ff8c00;
+            border-radius: 5px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .option:hover {
+            background-color: #e0e0e0;
+        }
+        .option im {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .option a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+	    text-align: center;
+        }
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Control de aforos</h1>
+        <div class="options">
+            <div class="option">
+		<a href="sala1.html">Sala 1</a>
+            </div>
+            <div class="option">
+                <a href="sala2.html">Sala 2</a>
+            </div>
+            <div class="option">
+                <a href="sala3.html">Sala 3</a>
+            </div>
+            <div class="option">
+		<a href="sala4.html">Sala 4</a>
+            </div>
+            <div class="option">
+                <a href="sala5.html">Sala 5</a>
+            </div>
+            <div class="option">
+                <a href="sala6.html">Sala 6</a>
+            </div>
+	    <div class="option">
+		<a href="sala7.html">Sala 7</a>
+            </div>
+            <div class="option">
+                <a href="sala8.html">Sala 8</a>
+            </div>
+            <div class="option">
+                <a href="sala9.html">Sala 9</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
