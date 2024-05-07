@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Lateral</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #3433;
+            padding-top: 20px;
+        }
+        .menu-item {
+            padding: 10px 20px;
+            color: #ffaf;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+            position: relative; /* Para posicionar el sub-menú */
+        }
+        .menu-item:hover {
+            background-color: #555;
+        }
+        .sub-menu {
+            display: none;
+            background-color: #444;
+            position: absolute;
+            top: 0;
+            left: 100%; /* Aparecerá a la derecha del menú */
+            min-width: 100px; /* Ancho mínimo */
+        }
+        .menu-item:hover .sub-menu {
+            display: block;
+        }
+        .sub-menu-item {
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .sub-menu-item:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <a href="#" class="menu-item">Inicio
+        <div class="sub-menu">
+            <a href="#" class="sub-menu-item">Calendario</a>
+            <a href="#" class="sub-menu-item">Horario</a>
+        </div>
+    </a>
+    <a href="#" class="menu-item">Clases
+        <div class="sub-menu">
+            <a href="#" class="sub-menu-item">Aforos</a>
+        </div>
+    </a>
+    <a href="registro.html" class="menu-item">Registro</a>
+    <a href="contacto.html" class="menu-item">Contacto</a>
+</div>
+
+</body>
+</html>
