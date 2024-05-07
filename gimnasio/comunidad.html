@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad virtual</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="rayo_icono/svg" href="../icono.svg">
+    <style>
+        /* Estilo principal */
+        body {
+            font-family: Raleway, "Raleway", "Helvetica Neue", Calibri, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+	    //font-size: 22px; /* Ajusta el tamaño de fuente según sea necesario */
+            background-color: #FFFAF5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+        }
+            font-weight: bold; /* Aplica negrita */
+	}
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #aaa;
+            text-decoration: none;
+            width: 200px;
+        }
+
+        .secondary-menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .secondary-menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .secondary-menu a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .secondary-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .noticias {
+	    font-family: "Bebas Neue";
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;	//Distinta
+	    overflow-x: hidden; /* Para ocultar las noticias fuera del contenedor */
+            margin: 20px; /* Agregamos margen */
+	    padding: 10px;
+	    text-decoration: none;
+	    font-size: 20px;
+        }
+
+        .noticia {
+	    font-family: "Bebas Neue";
+            width: calc(25% - 20px);
+            /*margin-bottom: 20px;*/
+	    /*margin-right: 20px;*/
+	    margin: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            /*height: 100%;*/
+            min-height: 1px;
+	    text-decoration: none;
+        }
+
+        .imagen {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .descripcion {
+            font-size: 20px;
+	    text-decoration: none;
+
+
+        }
+
+        .descripcion-res {
+            font-size: 14px;
+	    text-decoration: none;
+	    text-align: justify;
+	    width: 75%;
+        }
+
+        .reseña {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+	    margin-left: 20px;
+	    font-size: 14px;
+        }
+
+        .imagen-perfil {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .nombre {
+            font-weight: bold;
+        }
+
+        .valoracion {
+            color: gold;
+        }
+
+	.navegacion {
+            text-align: center;
+            margin-left: 8px;
+   	}
+
+    .navegacion button {
+        background-color: #555; /* Color de fondo */
+        border: none;
+        color: white; /* Color del texto */
+        padding: 10px 20px; /* Relleno */
+        text-align: center;
+        font-family: Raleway;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .navegacion button:hover {
+        background-color: #ffb37d; /* Color de fondo al pasar el cursor */
+    }        
+
+	footer {        
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+	.highlight {
+            color: #ff8c00; /* Color de resaltado */	
+	}
+
+	.lowlight {
+	    color: #FFB37D;  /*naranja suave*/
+	}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YOUR GYM APP</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#clases">Clases</a></li>
+                <li><a href="../index.html#calendario">Calendario</a></li>
+                <li><a href="../instalaciones.html"><b>Instalaciones</b></a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+                <li><a href="../registro.html"><span class="lowlight">REGISTRATE!</span></a></li>
+            </ul>
+            <!-- Línea secundaria -->
+            <ul class="secondary-menu">
+                <li><a href="aforos/aforos.html">Aforo de las Salas</a></li>
+                <li><a href="comunidad.html"><b>Comunidad Virtual</b></a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="valorar.html">Valoranos</a></li>
+                <li><a href="mapa.html">Ubicación</a></li>
+            </ul>
+        </nav>
+	    <th width="300" align="right" valign="middle">
+	    <p id="reloj" style="color:#fff">00:00:00</p>
+                
+		<script src="../script_reloj.js"></script>
+            </th>
+    </header>
+
+    <!-- Noticias -->
+    <div class="noticias">
+	
+    </div>
+
+    <!-- Flechas de navegación -->
+    <div class="navegacion">
+        <button id="anterior">← Anterior</button>
+        <button id="siguiente">Siguiente →</button>
+    </div>
+    <br>
+		<script src="script_com.js"></script>
+
+    <!-- Reseñas de usuario -->
+    <div class="reseñas">
+        <!-- Reseña 1 -->
+        <div class="reseña">
+            <img class="imagen-perfil" src="imagenes/persona1.png" alt="Imagen de perfil usuario 1">
+            <div class="info-usuario">
+                <div class="nombre">María Gutiérrez</div>
+                <div class="valoracion">★★★★☆</div>
+                <div class="descripcion-res">Increíble experiencia en este gimnasio. El ambiente es muy acogedor y el personal es muy atento. Me encanta la variedad de equipos y clases 		disponibles. Definitivamente lo recomendaría a cualquiera que esté buscando un lugar para ponerse en forma.</div>
+            </div>
+        </div>
+        <!-- Reseña 2 -->
+        <div class="reseña">
+            <img class="imagen-perfil" src="imagenes/persona2.png" alt="Imagen de perfil usuario 2">
+            <div class="info-usuario">
+                <div class="nombre">Juan Pérez</div>
+                <div class="valoracion">★★★★★</div>
+                <div class="descripcion-res">"He estado yendo a este gimnasio durante varios meses y estoy muy satisfecha con los resultados que he obtenido. El equipo de entrenadores es 		excelente y siempre están dispuestos a ayudar y motivar. Además, las instalaciones están muy limpias y bien mantenidas. ¡Lo recomiendo totalmente!</div>
+            </div>
+        </div>
+        <!-- Reseña 3 -->
+        <div class="reseña">
+            <img class="imagen-perfil" src="imagenes/persona3.png" alt="Imagen de perfil usuario 3">
+            <div class="info-usuario">
+                <div class="nombre">Carlos Martínez</div>
+                <div class="valoracion">★★★★☆</div>
+                <div class="descripcion-res">Mi experiencia en este gimnasio ha sido fantástica. Me encanta la energía positiva que se siente en cada clase y el ambiente motivador que crea 		el personal. Las rutinas de entrenamiento son desafiantes pero efectivas, y he visto una gran mejoría en mi salud y condición física desde que empecé a venir aquí.</div>
+            </div>
+        </div>
+        <!-- Reseña 4 -->
+        <div class="reseña">
+            <img class="imagen-perfil" src="imagenes/persona4.png" alt="Imagen de perfil usuario 4">
+            <div class="info-usuario">
+                <div class="nombre">Laura Sánchez</div>
+                <div class="valoracion">★★★☆☆</div>
+                <div class="descripcion-res">¡Este gimnasio es simplemente genial! Me encanta la variedad de clases que ofrecen, desde yoga hasta entrenamiento de fuerza. El personal es 		muy profesional y siempre están dispuestos a ayudar. Además, el horario de apertura es muy conveniente para mí, lo que me permite ajustar mi entrenamiento a mi agenda 			ocupada. Definitivamente lo recomendaría a cualquiera que esté buscando un lugar para mejorar su salud y bienestar.</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>YOUR GYM APP &copy; 2024<br>
+        Alejandro González ~ Adela Dans</p>
+    </footer>
+</body>
+</html>
