@@ -1,1 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de aforos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <link rel="icon" type="rayo_icono/svg" href="../../icono.svg">
+    <style>
+        body {
+            font-family: Raleway, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+ 	    //font-size: 22px; /* Ajusta el tamaño de fuente según sea necesario */
+    	    background-color: #FFFAF5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	    //display: grid;
+	    grid-template-columns: repeat(3, 1fr);
+	    grid-gap: 20px;
+        }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center; /* Para centrar el texto */
+}
 
+header h1 {
+
+    font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+    font-weight: bold; /* Aplica negrita */
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+     list-style-type: none;
+    //list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #aaa;		/*color letras*/
+    text-decoration: none;
+    width: 200px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+    display: inline; /* Cambiado a "inline" para mostrar los elementos en la misma línea */
+}
+
+nav ul li ul li {
+    display: inline; /* Cambiado a "inline" para mostrar los elementos en la misma línea */
+    margin: 0;
+}
+
+nav ul li ul li a {
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    color: #aaa;
+    text-decoration: none;
+}
+
+        .options {
+            //display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+	    display: grid;
+	    grid-template-columns: repeat(3, 1fr);
+	    grid-gap: 20px;
+        }
+        .option {
+            flex-basis: calc(20% - 20px);
+            background-color: #555;		
+            border-radius: 5px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .option:hover {
+            background-color: #FFB37D;		
+        }
+        .option im {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .option a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+	    text-align: center;
+        }
+	footer {		
+    	    background-color: #333;
+    	    color: #fff;
+    	    text-align: center;
+    	    padding: 10px 0;
+    	    //position: fixed;
+    	    bottom: 0;
+    	    width: 100%;
+	    font-size: 12px;
+	}
+
+.secondary-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.secondary-menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.secondary-menu a {
+    color: #666; /* Color más claro para la línea secundaria */
+    text-decoration: none;
+}
+
+.secondary-menu a:hover {
+    text-decoration: underline;
+}
+.tercer-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tercer-menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.tercer-menu a {
+    color: #777; /* Color más claro para la línea secundaria */
+    text-decoration: none;
+}
+
+.tercer-menu a:hover {
+    text-decoration: underline;
+}
+.highlight {
+            color: #ff8c00; /* Color de resaltado */	
+}
+.lowlight {	
+	    color: #FFB37D;  /*naranja suave*/
+}
+  }
+    </style>
+</head>
+<body>
+<header>
+        <h1>YOUR GYM APP</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../index.html#clases">Clases</a></li>
+                <li><a href="../../index.html#calendario">Calendario</a></li>
+		<li><a href="../../instalaciones.html"><b>Instalaciones</b></a>
+		</li>
+                <li><a href="../../index.html#contacto">Contacto</a></li>
+		<li><a href="../../registro.html"><span class="lowlight">REGISTRATE!</span></a></li>
+            </ul>
+	    <!-- Línea secundaria -->
+            <ul class="secondary-menu">
+            	<li><a href="aforos.html"><b>Aforo de las Salas</b></a></li>
+           	<li><a href="../comunidad.html">Comunidad Virtual</a></li>
+	        <li><a href="../eventos.html">Eventos</a></li>
+        	<li><a href="../valorar.html">Valoranos</a></li>
+            	<li><a href="../mapa.html">Ubicación</a></li>
+            </ul>
+        </nav>
+
+	<th width="300" align="right" valign="middle">
+		<p id="reloj" style="color:#fff">00:00:00</p>
+                
+		<script src="../script_reloj.js"></script>
+        </th>
+    </header>
+
+    <div class="container">
+        <h1>Control de aforos</h1>
+        <div class="options">
+            <div class="option">
+		<a href="sala1.html">Sala 1</a>
+            </div>
+            <div class="option">
+                <a href="sala2.html">Sala 2</a>
+            </div>
+            <div class="option">
+                <a href="sala3.html">Sala 3</a>
+            </div>
+            <div class="option">
+		<a href="sala4.html">Sala 4</a>
+            </div>
+            <div class="option">
+                <a href="sala5.html">Sala 5</a>
+            </div>
+            <div class="option">
+                <a href="sala6.html">Sala 6</a>
+            </div>
+	    <div class="option">
+		<a href="sala7.html">Sala 7</a>
+            </div>
+            <div class="option">
+                <a href="sala8.html">Sala 8</a>
+            </div>
+            <div class="option">
+                <a href="sala9.html">Sala 9</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>YOUR GYM APP &copy; 2024<br>
+	Alejandro González ~ Adela Dans</p>
+    </footer>
+</body>
+</html>
