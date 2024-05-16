@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aforo Sala 9</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="rayo_icono/svg" href="../../icono.svg">
+    <style>
+        body {
+            font-family: Raleway, "Raleway", "Helvetica Neue", Calibri, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+	    //font-size:22px;
+            background-color: #FFFAF5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+        }
+            font-weight: bold; /* Aplica negrita */
+	}
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+	    position: relative;
+        }
+
+        nav ul li a {
+            color: #aaa;
+            text-decoration: none;
+	    /*width:200px;*/
+        }
+
+        .secondary-menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .secondary-menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .secondary-menu a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .secondary-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            font-family: Raleway;
+	    //display: grid;
+	    grid-template-columns: repeat(3, 1fr);
+	    grid-gap: 20px;
+	    text-align: center;
+        }
+
+	.container-small {
+            max-width: 800px; /* Ancho máximo más estrecho */
+            margin: 50px auto;
+            padding: 2px;
+            background-color: #eee;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            font-family: Raleway;
+	    text-align: center;
+        }
+
+         .options {
+            //display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+	    display: grid;
+	    grid-template-columns: repeat(3, 1fr);
+	    grid-gap: 20px;
+        }
+        .option {
+            flex-basis: calc(20% - 20px);
+            background-color: #ff8c00;
+            border-radius: 5px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .option:hover {
+            background-color: #e0e0e0;
+        }
+        .option im {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .option a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+	    text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 0 auto; /* Centrar la tabla */
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+	img {
+            max-width: 80%;
+            max-height: 80%;
+            width: auto;
+            height: auto;
+        }
+
+        footer {		
+    	    background-color: #333;
+    	    color: #fff;
+    	    text-align: center;
+	    padding: 10px 0;
+    	    //position: fixed;
+    	    bottom: 0;
+    	    width: 100%;
+    	    font-size: 12px;
+	}
+
+        .highlight {
+            color: #ff8c00; /* Color de resaltado */    
+        }
+
+        .lowlight {
+            color: #FFB37D;  /*naranja suave*/
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>YOUR GYM APP</h1>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../../index.html#clases">Clases</a></li>
+            <li><a href="../../index.html#calendario">Calendario</a></li>
+            <li><a href="../../instalaciones.html"><b>Instalaciones</b></a></li>
+            <li><a href="../../index.html#contacto">Contacto</a></li>
+            <li><a href="../../registro.html"><span class="lowlight">REGÍSTRATE!</span></a></li>
+        </ul>
+        <!-- Línea secundaria -->
+        <ul class="secondary-menu">
+            <li><a href="aforos.html"><b>Aforo de las Salas</b></a></li>
+            <li><a href="../comunidad.html">Comunidad Virtual</a></li>
+            <li><a href="../eventos.html">Eventos</a></li>
+            <li><a href="../valorar.html">Valóranos</a></li>
+            <li><a href="../mapa.html">Ubicación</a></li>
+        </ul>
+    </nav>
+    <th width="300" align="right" valign="middle">
+		<p id="reloj" style="color:#fff">00:00:00</p>
+                
+		<script src="script_reloj.js"></script>
+        </th>
+</header>
+<div class="container-small">
+   <nav>
+     <ul>
+	<li><a href="sala1.html">Sala 1</a></li>
+	<li><a href="sala2.html">Sala 2</b></a></li>
+	<li><a href="sala3.html">Sala 3</a></li>
+	<li><a href="sala4.html">Sala 4</b></a></li>
+	<li><a href="sala5.html">Sala 5</a></li>
+	<li><a href="sala6.html">Sala 6</a></li>
+	<li><a href="sala7.html">Sala 7</b></a></li>
+	<li><a href="sala8.html">Sala 8</b></a></li>
+	<li><a href="sala9.html"><b>Sala 9</b></a></li>
+     </ul>
+   </nav>
+</div>
+
+<div class="container">
+    <h1>Aforo Sala 9<br></h1>
+    <table id="sala-table">
+        <!-- Las celdas de la tabla se generarán dinámicamente con JavaScript -->
+    </table>
+    <div id="info"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var table = document.getElementById("sala-table");
+            var infoDiv = document.getElementById("info");
+            var rows = 5;
+            var cols = 6;
+            var redCount = Math.floor(Math.random() * (rows * cols)); // Número aleatorio de celdas rojas
+            var greenCount = (rows * cols) - redCount; // El resto serán verdes
+            
+            // Calcular la cantidad de hombres y mujeres en puestos verdes
+            var hombres = Math.floor(Math.random() * redCount);
+            var mujeres = redCount - hombres;
+
+            for (var i = 0; i < rows; i++) {
+                var row = table.insertRow();
+                for (var j = 0; j < cols; j++) {
+                    var cell = row.insertCell();
+                    cell.innerHTML = "<img src='imagen_sala9.svg'>";
+                    if (redCount > 0) {
+                        cell.style.backgroundColor = "red";
+                        redCount--;
+                    } else {
+                        cell.style.backgroundColor = "green";
+                        greenCount--;
+                        // Agregar un atributo data-genero para identificar el género en el HTML
+                        cell.setAttribute("data-genero", Math.random() < 0.5 ? "hombre" : "mujer");
+                    }
+                }
+            }
+	
+            infoDiv.innerHTML  = "<br> Hombres en  la sala: " + hombres;
+            infoDiv.innerHTML += "<br> Mujeres en la sala: " + mujeres;
+            infoDiv.innerHTML += "<br> Puestos disponibles: " +  (30 -(hombres + mujeres));
+        });
+    </script>
+</div>
+    <footer>
+    	<p>YOUR GYM APP &copy; 2024<br>
+    	Alejandro González ~ Adela Dans</p>
+    </footer>
+</body>
+</html>
