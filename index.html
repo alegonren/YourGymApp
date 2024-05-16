@@ -28,7 +28,7 @@
                 <li><a href="#calendario">Calendario</a></li>
 		<li><a href="instalaciones.html">Instalaciones</a>
 		<ul>
-                    <li><a href="gimnasio/gimnasio1.html">YOUR GYM Multiusos</a></li>
+                    <li><a href="gimnasio1/gimnasio1.html">YOUR GYM Multiusos</a></li>
                     <li><a href="gimnasio2/gimnasio2.html">YOUR GYM Vallehermoso</a></li>
                     <li><a href="gimnasio3/gimnasio3.html">YOUR GYM Aldehuela</a></li>
                 </ul>
@@ -95,7 +95,7 @@
 
         <section id="clases">
 	    <div class="center-container">
-        	<!-- Resto del contenido de tu página -->
+
         	<h1>Horarios del Gimnasio</h1>
         	<p>A continuación se muestran los horarios de las actividades del gimnasio durante la semana:</p>
 
@@ -132,32 +132,19 @@
                     	    document.write("</tr>");
                 	}
 
-		    // Función para obtener la clase CSS asociada a cada actividad
-                    function obtenerClaseCSS(actividad) {
-                        switch (actividad) {
-                            case "Yoga":
-                                return "Yoga";
-                            case "Pilates":
-                                return "Pilates";
-                            case "CrossFit":
-                                return "CrossFit";
-                            // Añade más casos para otros tipos de actividades aquí
-                            default:
-                                return "";
-                        }
-                    }
             	</script>
        		</table>
     	     </div>
         </section>
 
-        <section id="calendario" style="text-align: center;"> <!-- Alinea el contenido del centro de la sección -->
-    <h2>Calendario de Clases</h2>
-    <div style="display: flex; justify-content: center;">
-        <div id="calendar"></div> <!-- No es necesario especificar justify-content aquí -->
-    </div>
-    <script src="calendar.js"></script>
-</section>
+	
+
+        <section id="calendario"> 
+            <div id="calendar">
+		<h2>Calendario de Clases</h2>
+	    </div>
+			<script src="calendar.js"></script>
+	</section>
 
         <section id="contacto">
             <h2>Información de contacto</h2>

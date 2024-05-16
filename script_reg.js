@@ -1,4 +1,5 @@
-document.getElementById("registroForm").addEventListener("submit", function(event) {
+document.getElementById("registroForm").addEventListener("submit", function(event) 
+{
     event.preventDefault(); // Evita que el formulario se envíe
 
     const generoSelect = document.getElementById("genero");
@@ -10,7 +11,7 @@ document.getElementById("registroForm").addEventListener("submit", function(even
         mensajeDiv.style.display = "block"; // Muestra el mensaje
     } else {
         // Aquí puedes enviar el formulario o realizar otras acciones
-        mensajeDiv.innerText = "¡Registro exitoso! Gracias por unirte.";
+        mensajeDiv.innerText = "¡Registro exitoso!\nCompruebe su correo electrónico para finalizar el registro";
         mensajeDiv.style.display = "block"; // Muestra el mensaje
         // Aquí puedes redirigir al usuario a otra página si es necesario
     }
