@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <link rel="icon" type="rayo_icono/svg" href="../icono.svg">
+    <title>Eventos</title>
+    <style>
+ 	body {
+            font-family: Raleway, "Raleway", "Helvetica Neue", Calibri, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+	    //font-size: 22px; /* Ajusta el tamaño de fuente según sea necesario */
+            background-color: #FFFAF5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+        }
+            font-weight: bold; /* Aplica negrita */
+	}
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #aaa;
+            text-decoration: none;
+            width: 200px;
+        }
+
+        .secondary-menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .secondary-menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .secondary-menu a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .secondary-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .eventos {
+            margin-top: 50px;
+        }
+        .evento {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .fecha {
+            flex-basis: 100px;
+            text-align: center;
+        }
+        .dia {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .mes {
+            font-size: 18px;
+            color: #999;
+        }
+        .detalles {
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+        .nombre-evento {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .ubicacion {
+            font-size: 14px;
+            color: #666;
+        }
+        footer {        
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+	.highlight {
+            color: #ff8c00; /* Color de resaltado */	
+	}
+
+	.lowlight {
+	    color: #FFB37D;  /*naranja suave*/
+	}
+
+    </style>
+</head>
+<body>
+<header>
+        <h1>YOUR GYM APP</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#clases">Clases</a></li>
+                <li><a href="../index.html#calendario">Calendario</a></li>
+                <li><a href="../instalaciones.html"><b>Instalaciones</b></a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+                <li><a href="../registro.html"><span class="lowlight">REGISTRATE!</span></a></li>
+            </ul>
+            <!-- Línea secundaria -->
+            <ul class="secondary-menu">
+                <li><a href="aforos/aforos.html">Aforo de las Salas</a></li>
+                <li><a href="comunidad.html">Comunidad Virtual</a></li>
+                <li><a href="eventos.html"><b>Eventos</a></b></li>
+                <li><a href="valorar.html">Valoranos</a></li>
+                <li><a href="mapa.html">Ubicación</a></li>
+            </ul>
+        </nav>
+	    <th width="300" align="center" valign="middle">
+	    <p id="reloj" style="color:#fff">00:00:00</p>
+                
+		<script src="../script_reloj.js"></script>
+            </th>
+    </header>
+
+    <div class="container">
+        <h1>Próximos Eventos </h1>
+	<p style="font-size: 11pt;"> &emsp; Consulte los proximos eventos disponibles de su instalacion <b>YOUR GYM APP</b> más cercana!:</p>
+
+
+        <div class="eventos">
+            <!-- Evento 1 -->
+            <div class="evento">
+                <div class="fecha">
+                    <div class="dia">15</div>
+                    <div class="mes">Jun</div>
+                </div>
+                <div class="detalles">
+                    <div class="nombre-evento">Clase de Yoga</div>
+                    <div class="ubicacion">Salón de Yoga</div>
+                </div>
+            </div>
+            <!-- Evento 2 -->
+            <div class="evento">
+                <div class="fecha">
+                    <div class="dia">20</div>
+                    <div class="mes">Jun</div>
+                </div>
+                <div class="detalles">
+                    <div class="nombre-evento">Entrenamiento en Grupo</div>
+                    <div class="ubicacion">Área de Entrenamiento</div>
+                </div>
+            </div>
+            <!-- Evento 3 -->
+            <div class="evento">
+                <div class="fecha">
+                    <div class="dia">25</div>
+                    <div class="mes">Jun</div>
+                </div>
+                <div class="detalles">
+                    <div class="nombre-evento">Carrera de 5 km</div>
+                    <div class="ubicacion">Parque Local</div>
+                </div>
+            </div>
+            <!-- Evento 4 -->
+            <div class="evento">
+                <div class="fecha">
+                    <div class="dia">3</div>
+                    <div class="mes">Jul</div>
+                </div>
+                <div class="detalles">
+                    <div class="nombre-evento">Competencia de Levantamiento de Pesas</div>
+                    <div class="ubicacion">Área de Pesas</div>
+                </div>
+            </div>
+            <!-- Evento 5 -->
+            <div class="evento">
+                <div class="fecha">
+                    <div class="dia">10</div>
+                    <div class="mes">Jul</div>
+                </div>
+                <div class="detalles">
+                    <div class="nombre-evento">Entrenamiento Funcional</div>
+                    <div class="ubicacion">Área de Entrenamiento</div>
+                </div>
+            </div>
+            <!-- Puedes agregar más eventos según sea necesario -->
+        </div>
+    </div>
+    <footer>
+        <p>YOUR GYM APP &copy; 2024<br>
+        Alejandro González ~ Adela Dans</p>
+    </footer>
+</body>
+</html>
