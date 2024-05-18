@@ -165,7 +165,7 @@ text-align: left; /* Para centrar el texto */
             display: block;
             margin-bottom: 10px;
         }
-.btn {
+	.btn {
             display: inline-block;
             padding: 10px 20px;
             background-color: #bbb;
@@ -183,6 +183,15 @@ text-align: left; /* Para centrar el texto */
         .icon {
             margin-right: 5px;
         }
+	#sesionBtn {
+	display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+	}
     </style>
 </head>
 <body>
@@ -190,9 +199,9 @@ text-align: left; /* Para centrar el texto */
         <h1>YOUR GYM APP</h1>
         <nav>
             <ul>
-                <li><a href="#inicio"><b>Inicio</b></a></li>
-                <li><a href="#clases">Clases</a></li>
-                <li><a href="#calendario">Calendario</a></li>
+                <li><a href="index.html#inicio"><b>Inicio</b></a></li>
+                <li><a href="index.html#clases">Clases</a></li>
+                <li><a href="index.html#calendario">Calendario</a></li>
 		<li><a href="instalaciones.html">Instalaciones</a>
 		<ul>
                     <li><a href="gimnasio1/gimnasio1.html">YOUR GYM Multiusos</a></li>
@@ -200,8 +209,9 @@ text-align: left; /* Para centrar el texto */
                     <li><a href="gimnasio3/gimnasio3.html">YOUR GYM Aldehuela</a></li>
                 </ul>
 		</li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
 		<li><a href="registro.html"><span class="lowlight">REGÍSTRATE!</span></a></li>
+		<li>&emsp;&emsp;<button id="sesionBtn" class="btn"><i id="icon" class="icon"></i></button></li>
             </ul>
         </nav>
 
@@ -210,7 +220,7 @@ text-align: left; /* Para centrar el texto */
                 
 		<script src="script_reloj.js"></script>
         </th>
-
+<script src="script_sesion.js"></script>
     </header>
 
 	<button style="justify-content: center;"; id="cerrarSesionBtn" class="btn">

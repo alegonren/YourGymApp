@@ -15,11 +15,11 @@
         // Configurar el icono según el estado del usuario
         var usuarioLogueado = localStorage.getItem("usuarioLogueado") === "true";
         if (usuarioLogueado) {
-            icon.classList.add("fa-solid", "fa-circle-info", "fa-xl");
-            icon.style.color = "#63E6BE";
+            icon.classList.add("fa-solid", "fa-circle-user", "fa-xl");
+            icon.style.color = "#00FF00";
         } else {
             icon.classList.add("fa-solid", "fa-circle-user", "fa-xl");
-	    icon.style.color = "#FFD43B";
+	    icon.style.color = "#FFFAF5";
         }
 
         // Agregar evento de clic al botón para abrir la ventana adecuada

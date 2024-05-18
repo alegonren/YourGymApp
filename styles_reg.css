@@ -156,3 +156,21 @@ footer {
     width: 100%;
     font-size: 12px;
 }
+
+	.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            /*background-color: #555;*/
+        }
+
+        .icon {
+            /*margin-right: 5px;*/
+        }
