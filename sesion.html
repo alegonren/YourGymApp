@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <style>
+        body {
+    		font-family: Raleway, "Raleway", "Helvetica Neue", Calibri, Arial, sans-serif;
+    		margin: 0;
+    		padding: 0;
+    		//font-size: 22px; /* Ajusta el tamaño de fuente según sea necesario */
+    		background-color: #FFFAF5;
+	}
+
+
+	header {
+	    background-color: #333;
+	    color: #fff;
+	    padding: 5px;
+	    text-align: center; /* Para centrar el texto */
+	}
+
+	header h1 {
+	    font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	    font-weight: bold; /* Aplica negrita */
+	}
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+     list-style-type: none;
+    //list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #aaa;		/*color letras*/
+    text-decoration: none;
+    width: 200px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+    display: inline; /* Cambiado a "inline" para mostrar los elementos en la misma línea */
+}
+
+nav ul li ul li {
+    display: inline; /* Cambiado a "inline" para mostrar los elementos en la misma línea */
+    margin: 0;
+}
+
+nav ul li ul li a {
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    color: #aaa;
+    text-decoration: none;
+}
+	footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        .secondary-menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .secondary-menu li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .secondary-menu a {
+            color: #666; /* Color más claro para la línea secundaria */
+            text-decoration: none;
+        }
+
+        .secondary-menu a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            font-family: Raleway;
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Centra el contenido */
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #555;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            /*transition: background-color 0.3s;*/
+        }
+
+        input[type="submit"]:hover
+	{
+            background-color: #FFB37D;
+        }
+
+        .forgot-password {
+            text-decoration: none;
+            color: #888;
+        }
+        .highlight {
+            color: #ff8c00; /* Color de resaltado */
+        }
+
+        .lowlight {
+            color: #FFB37D;  /* naranja suave */
+        }
+
+/* Estilos para el mensaje */
+.mensaje {
+    display: none; /* Inicialmente oculto */
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #e0f7fa;
+    border: 1px solid #26c6da;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YOUR GYM APP</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#clases">Clases</a></li>
+                <li><a href="index.html#calendario">Calendario</a></li>
+		<li><a href="instalaciones.html">Instalaciones</a>
+		<ul>
+                    <li><a href="gimnasio1/gimnasio1.html">YOUR GYM Multiusos</a></li>
+                    <li><a href="gimnasio2/gimnasio2.html">YOUR GYM Vallehermoso</a></li>
+                    <li><a href="gimnasio3/gimnasio3.html">YOUR GYM Aldehuela</a></li>
+                </ul>
+		</li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+		<li><a href="registro.html"><span class="lowlight">REGÍSTRATE!</span></a></li>
+            </ul>
+        </nav>
+
+	<th width="300" align="right" valign="middle">
+		<p id="reloj" style="color:#fff">00:00:00</p>
+                
+		<script src="script_reloj.js"></script>
+        </th>
+
+    </header>
+
+
+        <div class="form-container">
+            <h2>Iniciar Sesión</h2>
+            
+	    <form id="loginForm"  action="#">
+		  <label for="username">Usuario:</label><br>
+		  <input type="text" id="username" name="username" placeholder="Usuario" required><br>
+		  <label for="password"><br>Contraseña:</label><br>
+		  <input type="password" id="password" name="password" placeholder="Contraseña" required><br><br>
+		  <input type="submit" value="Iniciar sesión">
+	    </form>
+            <a href="#" id="forgotPassword" class="forgot-password">¿Has olvidado la contraseña?</a>
+        </div>
+
+
+    <footer>
+        <p>YOUR GYM APP &copy; 2024<br>
+        Alejandro González ~ Adela Dans</p>
+    </footer>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+	    event.preventDefault(); // Evitar el envío del formulario
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            if (username === "usuario" && password === "ipo2024") {
+                // Guardar el estado de inicio de sesión en localStorage
+    		localStorage.setItem("usuarioLogueado", true);
+    		// Redirigir a la página principal
+    		window.location.href = "instalaciones.html";
+
+            } else {
+                // Evitar el envío del formulario
+                event.preventDefault();
+                alert("Usuario o contraseña incorrectos");
+            }
+        });
+
+        document.getElementById("forgotPassword").addEventListener("click", function(event) {
+            event.preventDefault();
+	    alert("El usuario es: usuario\nLa contraseña es: ipo2024");
+        });
+    </script>
+
+</body>
+</html>
