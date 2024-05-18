@@ -66,7 +66,7 @@
 
         .secondary-menu li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 10px;
         }
 
         .secondary-menu a {
@@ -77,6 +77,35 @@
         .secondary-menu a:hover {
             text-decoration: underline;
         }
+
+	.container {
+            max-width: 800pt;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            font-family: Raleway;
+	    //display: grid;
+	    grid-template-columns: repeat(3, 1fr);
+	    grid-gap: 2px;
+	    text-align: center;
+        }
+
+	.reto {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+        .reto h2 {
+            text-align: center;
+        }
+        .reto p {
+            text-align: justify;
+        }
+	.reto h3 {
+		text-align: left;
+	}
 
         .noticias {
 	    font-family: "Bebas Neue";
@@ -193,7 +222,7 @@
 </head>
 <body>
     <header>
-        <h1>YOUR GYM APP</h1>
+        <h1>YOUR GYM · Multiusos</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -208,7 +237,7 @@
                 <li><a href="aforos/aforos.html">Aforo de las Salas</a></li>
                 <li><a href="comunidad.html"><b>Comunidad Virtual</b></a></li>
                 <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="valorar.html">Valoranos</a></li>
+                <li><a href="valorar.html">Valóranos</a></li>
                 <li><a href="mapa.html">Ubicación</a></li>
             </ul>
         </nav>
@@ -218,6 +247,16 @@
 		<script src="../script_reloj.js"></script>
             </th>
     </header>
+
+    <div class="container">
+        <section class="reto"> 
+            <h2>Reto del día</h2> 
+	    <h3>El ejercicio de hoy, es:</h3>
+            <p id="ejercicioDelDia"></p>
+        </section>
+    </div>
+
+    <script src="reto_diario.js"></script>
 
     <!-- Noticias -->
     <div class="noticias">
