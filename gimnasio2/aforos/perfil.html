@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Usuario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <link rel="icon" type="rayo_icono/svg" href="../icono.svg">
+    <style>
+	body {
+    		font-family: Raleway, "Raleway", "Helvetica Neue", Calibri, Arial, sans-serif;
+    		margin: 0;
+    		padding: 0;
+    		//font-size: 22px; /* Ajusta el tamaño de fuente según sea necesario */
+    		background-color: #FFFAF5;
+		text-align: center; /* Para centrar el texto */
+	}
+
+	header {
+	    background-color: #333;
+	    color: #fff;
+	    padding: 5px;
+	    text-align: center; /* Para centrar el texto */
+	}
+
+	header h1 {
+	    font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	    font-weight: bold; /* Aplica negrita */
+	}
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+     list-style-type: none;
+    //list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #aaa;		/*color letras*/
+    text-decoration: none;
+    width: 200px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+    display: inline; /* Cambiado a "inline" para mostrar los elementos en la misma línea */
+}
+
+nav ul li ul li {
+    display: inline; /* Cambiado a "inline" para mostrar los elementos en la misma línea */
+    margin: 0;
+}
+
+nav ul li ul li a {
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    color: #aaa;
+    text-decoration: none;
+}
+	footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        .secondary-menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .secondary-menu li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .secondary-menu a {
+            color: #666; /* Color más claro para la línea secundaria */
+            text-decoration: none;
+        }
+
+        .secondary-menu a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            font-family: Raleway;
+text-align: left; /* Para centrar el texto */
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            /*text-align: left; / Centra el contenido */
+        }
+.highlight {
+            color: #ff8c00; /* Color de resaltado */	
+}
+.lowlight {	
+	    color: #FFB37D;  /*naranja suave*/
+}
+
+
+	
+
+  .exercise-list {
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .exercise-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .exercise-list li {
+            margin-bottom: 10px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+	.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #bbb;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+	    margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: red;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+	#sesionBtn {
+	display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+	}
+.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            /*background-color: #555;*/
+        }
+
+        .icon {
+            /*margin-right: 5px;*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YOUR GYM APP</h1>
+        <nav>
+           <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../index.html#clases">Clases</a></li>
+                <li><a href="../../index.html#calendario">Calendario</a></li>
+		<li><a href="../../instalaciones.html">Instalaciones</a>
+		<ul>
+                    <li><a href="../../gimnasio1/gimnasio1.html">YOUR GYM Multiusos</a></li>
+                    <li><a href="../../gimnasio2/gimnasio2.html">YOUR GYM Vallehermoso</a></li>
+                    <li><a href="../../gimnasio3/gimnasio3.html">YOUR GYM Aldehuela</a></li>
+                </ul>
+		</li>
+                <li><a href="../../index.html#contacto">Contacto</a></li>
+		<li><a href="../../registro.html"><span class="lowlight">REGÍSTRATE!</span></a></li>
+		<li>&emsp;&emsp;<button id="sesionBtn" class="btn"><i id="icon" class="icon"></i></button></li>
+<script src="script_sesion.js"></script>
+            </ul>
+
+        </nav>
+
+	<th width="300" align="right" valign="middle">
+		<p id="reloj" style="color:#fff">00:00:00</p>
+                
+		<script src="script_reloj.js"></script>
+        </th>
+<script src="script_sesion.js"></script>
+    </header>
+
+	<button style="justify-content: center;"; id="cerrarSesionBtn" class="btn">
+            <i class="icon fas fa-sign-out-alt"></i>
+            Cerrar Sesión
+        </button>
+
+        <!-- Container de Datos Personales -->
+        <div class="container">
+            <h2>Datos Personales</h2>
+		<ul>
+                <p><strong>Nombre:</strong> Alejandro</p>
+                <p><strong>Apellidos:</strong> González Rengel</p>
+                <p><strong>Fecha de Nacimiento:</strong> 23/12/2001</p>
+                <p><strong>Correo Electrónico:</strong> coti@usal.es</p>
+                <p><strong>Ciudad:</strong> Salamanca</p>
+                <p><strong>Provincia:</strong> Salamanca</p>
+            	</ul>
+        </div>
+
+        <!-- Container de Datos Físicos -->
+        <div class="container">
+            <h2>Datos Físicos</h2>
+		<ul>
+                <p><strong>Peso:</strong> 67,5 kg</p>
+                <p><strong>Altura:</strong> 181 cm</p>
+                <p><strong>Plan de Entrenamiento:</strong> 
+                    <select>
+                        <option value="plan1">Entrenamiento libre</option>
+                        <option value="plan2">Entrenamiento de volumen</option>
+                        <option value="plan3">Entrenamiento de fuerza</option>
+			<option value="plan4">Entrenamiento por diversión</option>
+                    </select>
+                </p>
+                <p><strong>Índice de Masa Corporal:</strong> 20,2</p>
+                <p><strong>Porcentaje de Grasa Corporal:</strong> 9,56%</p>
+                <p><strong>Circunferencia de cintura:</strong> 100cm</p>
+		<p><strong>Circunferencia del brazo:</strong> 30cm</p>
+		<p><strong>Circunferencia del muslo:</strong> 60cm</p>
+		<p><strong>Circunferencia del pecho:</strong> 95cm</p>
+      
+        </div>
+
+        <!-- Container de Favoritos -->
+        <div class="container">
+    	<!-- Lista de ejercicios ya cargados -->
+
+        	<h2>Registro de RMs</h2>
+        	<nav id="exercise-list">
+ 	           <!-- Los ejercicios se cargarán aquí -->
+        	    <p>&emsp;Sentidilla completa: 120kg</p>
+        	    <p>&emsp;Press de banca: 60kg</p>
+        	    <p>&emsp;Pull over: 40kg</p>
+        	</nav>
+   
+
+    <!-- Formulario para agregar nuevos ejercicios -->
+    <form id="favorite-exercises-form" onsubmit="showMessage()">
+        <label for="exercise-dropdown">Selecciona un ejercicio:</label>
+        <select id="exercise-dropdown" name="exercise-dropdown">
+            <option value="press-de-banca">Press de Banca</option>
+	    <option value="sentadillas">Sentadillas</option>
+	    <option value="dominadas">Dominadas</option>
+	    <option value="peso-muerto">Peso Muerto</option>
+	    <option value="curls-de-biceps">Curls de Bíceps</option>
+	    <option value="extensiones-de-triceps">Extensiones de Tríceps</option>
+            <!-- Puedes agregar más opciones según tus necesidades -->
+        </select>
+        <label for="exercise-description">Introduzca peso o tiempo:</label>
+        <textarea id="exercise-description" name="exercise-description" rows="4" required></textarea>
+        <input type="submit" value="Añadir ejercicio">
+    </form>
+    </div>
+    </div>
+
+
+    
+    <footer>
+        <p>YOUR GYM APP &copy; 2024<br>
+	Alejandro González ~ Adela Dans</p>
+    </footer>
+<script>
+    function showMessage() {
+        alert("Ejericicio registrado!");
+    }
+</script>
+
+    <script>
+        // Función para cerrar la sesión
+        function cerrarSesion() {
+            localStorage.setItem("usuarioLogueado", "false");
+            window.location.href = "instalaciones.html";
+        }
+
+        // Obtener el botón de cerrar sesión del DOM
+        var cerrarSesionBtn = document.getElementById("cerrarSesionBtn");
+
+        // Agregar evento de clic al botón para cerrar sesión
+        cerrarSesionBtn.addEventListener("click", cerrarSesion);
+    </script>
+</body>
+</html>
