@@ -63,7 +63,7 @@
 
         .secondary-menu li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 10px;
         }
 
         .secondary-menu a {
@@ -169,7 +169,7 @@
 </head>
 <body>
 <header>
-    <h1>YOUR GYM APP</h1>
+    <h1>YOUR GYM · Vallehermoso</h1>
     <nav>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -197,12 +197,12 @@
 
 <div class="container">
     <h1>Valóranos!</h1>
-    <p style="font-size: 11pt;"> &emsp; En <b>YOUR GYM APP</b> nos importa tu opinión. Por favor, tómate un momento para valorar nuestros servicios:</p>
+    <p style="font-size: 11pt;"> &emsp; En <b>YOUR GYM APP</b> nos importa tu opinión. Por favor, tómate un momento para valorar nuestros servicios: <br>&emsp; <a style="color: red; font-size: 20pt;">*</a><a style="color: red; font-size: 11pt;">Campo obligatorio</a></p>
 
     <form id="valoracionForm" action="#" onsubmit="showMessage()">
-        <label for="nombre">Nombre:</label>
+        <label for="nombre">Nombre: <a style="color: red; font-size: 15pt;">*</a></label>
         <input type="text" id="nombre" name="nombre" required>
-        <label for="estrellas">Número de Estrellas:</label>
+        <label for="estrellas">Número de Estrellas: <a style="color: red; font-size: 15pt;">*</a></label>
         <select id="estrellas" name="estrellas" required>
             <option value="1">★</option>
             <option value="2">★★</option>
@@ -210,10 +210,10 @@
             <option value="4">★★★★</option>
             <option value="5">★★★★★</option>
         </select>
-        <label for="opinion">Opinión:</label>
+        <label for="opinion">Opinión: <a style="color: red; font-size: 15pt;">*</a></label>
         <textarea id="opinion" name="opinion" rows="4" required></textarea>
 
-	<label for="foto">Suba su foto de perfil:</label>
+	<label for="foto">Suba su foto de perfil: <a style="color: red; font-size: 15pt;">*</a></label>
         <input type="file" id="foto" name="foto" accept="image/*" required><br><br><br>
 
         <input type="submit" value="Enviar">
