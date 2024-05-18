@@ -6,6 +6,7 @@
     <title>Aforo Sala 6</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
     <link rel="icon" type="rayo_icono/svg" href="../../icono.svg">
     <style>
         body {
@@ -167,6 +168,24 @@
         .lowlight {
             color: #FFB37D;  /*naranja suave*/
         }
+
+	.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            /*background-color: #555;*/
+        }
+
+        .icon {
+            /*margin-right: 5px;*/
+        }
     </style>
 </head>
 <body>
@@ -180,6 +199,7 @@
             <li><a href="../../instalaciones.html"><b>Instalaciones</b></a></li>
             <li><a href="../../index.html#contacto">Contacto</a></li>
             <li><a href="../../registro.html"><span class="lowlight">REGÍSTRATE!</span></a></li>
+	    <li>&emsp;&emsp;<button id="sesionBtn" class="btn"><i id="icon" class="icon"></i></button></li>
         </ul>
         <!-- Línea secundaria -->
         <ul class="secondary-menu">
@@ -195,6 +215,7 @@
                 
 		<script src="script_reloj.js"></script>
         </th>
+<script src="script_sesion.js"></script>
 </header>
 <div class="container-small">
    <nav>
