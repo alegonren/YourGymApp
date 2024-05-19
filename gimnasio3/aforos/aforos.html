@@ -183,7 +183,24 @@ nav ul li ul li a {
 .lowlight {	
 	    color: #FFB37D;  /*naranja suave*/
 }
-  }
+	.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            /*background-color: #555;*/
+        }
+
+        .icon {
+            /*margin-right: 5px;*/
+        }
+  
     </style>
 </head>
 <body>
@@ -198,6 +215,8 @@ nav ul li ul li a {
 		</li>
                 <li><a href="../../index.html#contacto">Contacto</a></li>
 		<li><a href="../../registro.html"><span class="lowlight">REGÍSTRATE!</span></a></li>
+		<li>&emsp;&emsp;<button id="sesionBtn" class="btn"><i id="icon" class="icon"></i></button></li>
+<script src="script_sesion.js"></script>
             </ul>
 	    <!-- Línea secundaria -->
             <ul class="secondary-menu">
