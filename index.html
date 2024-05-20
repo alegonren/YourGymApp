@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>YOUR GYM APP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR GYM APP</title>
 
-    	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="display/styles_display.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="display/styles_display.css">
 
-    	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap">
-    	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
-	<link rel="icon" type="rayo_icono/svg" href="icono.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <link rel="icon" type="rayo_icono/svg" href="icono.svg">
 
+    <style>
+        body {
+    	    font-family: Raleway, "Raleway", "Helvetica Neue", Calibri, Arial, sans-serif;
+    	    margin: 0;
+    	    padding: 0;
+    	    //font-size: 22px; /* Ajusta el tamaño de fuente según sea necesario */
+    	    background-color: #FFFAF5;
+	}
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+	    margin-right: 60px;
+	    margin-left: 60px;
+        }
+        .activity {
+            flex: 0 0 30%;
+            box-sizing: border-box;
+            //padding: 10px;
+            margin: 8px 0;
+            //background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .activity {
+                flex: 0 0 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .activity {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
 </head>
 <body>
 
-	<script src="script_index.js"></script>
-
+    <script src="script_index.js"></script>
 
     <header>
         <h1>YOUR GYM APP</h1>
@@ -26,152 +61,169 @@
                 <li><a href="#inicio"><b>Inicio</b></a></li>
                 <li><a href="#clases">Clases</a></li>
                 <li><a href="#calendario">Calendario</a></li>
-		<li><a href="instalaciones.html">Instalaciones</a>
-		<ul>
-                    <li><a href="gimnasio1/gimnasio1.html">YOUR GYM Multiusos</a></li>
-                    <li><a href="gimnasio2/gimnasio2.html">YOUR GYM Vallehermoso</a></li>
-                    <li><a href="gimnasio3/gimnasio3.html">YOUR GYM Aldehuela</a></li>
-                </ul>
-		</li>
+                <li><a href="instalaciones.html">Instalaciones</a>
+                    <ul>
+                        <li><a href="gimnasio1/gimnasio1.html">YOUR GYM Multiusos</a></li>
+                        <li><a href="gimnasio2/gimnasio2.html">YOUR GYM Vallehermoso</a></li>
+                        <li><a href="gimnasio3/gimnasio3.html">YOUR GYM Aldehuela</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contacto">Contacto</a></li>
-		<li><a href="registro.html"><span class="lowlight">REGÍSTRATE!</span></a></li>
-		<li>&emsp;&emsp;<button id="sesionBtn" class="btn"><i id="icon" class="icon"></i></button></li>
+                <li><a href="registro.html"><span class="lowlight">REGÍSTRATE!</span></a></li>
+                <li>&emsp;&emsp;<button id="sesionBtn" class="btn"><i id="icon" class="icon"></i></button></li>
             </ul>
         </nav>
 
-	<th width="300" align="right" valign="middle">
-		<p id="reloj" style="color:#fff">00:00:00</p>
-                
-		<script src="script_reloj.js"></script>
+        <th width="300" align="right" valign="middle">
+            <p id="reloj" style="color:#fff">00:00:00</p>
+            <script src="script_reloj.js"></script>
         </th>
-	<script src="script_sesion.js"></script>
-
+        <script src="script_sesion.js"></script>
     </header>
     <main>
         <section id="inicio">
-            <h2>Bienvenido a YOUR GYM APP</h1>
-        <p>Solución digital para los desafíos del gimnasio</p>
-        <p>¡Estamos aquí para <span class="highlight">resolver</span> tus problemas de entrenamiento!</p>
-        
-<div class="carousel">
-    <div class="slides">
-        <div class="slide">
-            <img src="imagenes/imagen1.jpg">
-            <div class="description">La mejor seleción de máquinas</div>
-        </div>
-        <div class="slide">
-            <img src="imagenes/imagen2.jpg">
-            <div class="description">Espacios amplios y luminosos</div>
-        </div>
-        <div class="slide">
-            <img src="imagenes/imagen3.jpg">
-            <div class="description">Instalaciones modernas</div>
-        </div>
-        <div class="slide">
-            <img src="imagenes/imagen4.jpg">
-            <div class="description">Actividades accesibles para todos</div>
-        </div>
-        <div class="slide">
-            <img src="imagenes/imagen5.jpg">
-            <div class="description">Disfruta haciendo deporte</div>
-        </div>
-	<div class="slide">
-            <img src="imagenes/imagen6.jpg">
-            <div class="description">Renovacion de espacios de halterofília</div>
-        </div>
-    </div>
-    <div class="controls">
-        <button onclick="prevSlide()">&#10094;</button>
-        <button onclick="nextSlide()">&#10095;</button>
-    </div>
+            <h2>Bienvenido a YOUR GYM APP</h2>
+            <p>Solución digital para los desafíos del gimnasio</p>
+            <p>¡Estamos aquí para <span class="highlight">resolver</span> tus problemas de entrenamiento!</p>
+            
+            <div class="carousel">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="imagenes/imagen1.jpg">
+                        <div class="description">La mejor selección de máquinas</div>
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/imagen2.jpg">
+                        <div class="description">Espacios amplios y luminosos</div>
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/imagen3.jpg">
+                        <div class="description">Instalaciones modernas</div>
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/imagen4.jpg">
+                        <div class="description">Actividades accesibles para todos</div>
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/imagen5.jpg">
+                        <div class="description">Disfruta haciendo deporte</div>
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/imagen6.jpg">
+                        <div class="description">Renovación de espacios de halterofilia</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button onclick="prevSlide()">&#10094;</button>
+                    <button onclick="nextSlide()">&#10095;</button>
+                </div>
+                <script src="display/script_display.js"></script>
+            </div>
 
-	<script src="display/script_display.js"></script>
-</div>
-
-
-        <p>Y estate atento, porque <span class="highlight">nuestro camino apenas comienza</span>.</p>
-        <p>¡Gracias por ser parte de YOUR GYM APP!</p>
+            <p>Y estate atento, porque <span class="highlight">nuestro camino apenas comienza</span>.</p>
+            <p>¡Gracias por ser parte de YOUR GYM APP!</p>
         </section>
-	<br>
+        
 
         <section id="clases">
-	    <div class="center-container">
+            <div class="center-container">
+                <h2>Horarios del Gimnasio</h2>
+                <p>A continuación se muestran los horarios de las actividades del gimnasio durante la semana:</p>
 
-        	<h1>Horarios del Gimnasio</h1>
-        	<p>A continuación se muestran los horarios de las actividades del gimnasio durante la semana:</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                    <script>
+                        // Recorremos el objeto JSON y generamos las filas de la tabla
+                        for (var dia in horariosGimnasio) {
+                            document.write("<tr>");
+                            document.write("<td>" + dia + "</td>");
 
-        	<table border="1">
-		
-        	<tr>
-                	<th></th>
-                	<th>Lunes</th>
-                	<th>Martes</th>
-                	<th>Miércoles</th>
-                	<th>Jueves</th>
-                	<th>Viernes</th>
-            	</tr>
-            	<script>
-                	// Recorremos el objeto JSON y generamos las filas de la tabla
-                	for (var dia in horariosGimnasio)
-			{
-                	    document.write("<tr>");
-                    	    document.write("<td>" + dia + "</td>");
+                            //Iteramos sobre las actividades para cada día
+                            for (var actividad in horariosGimnasio[dia]) {
+                                document.write("<td>" + horariosGimnasio[dia][actividad] + "</td>");
+                            }
 
-                    	    //Iteramos sobre las actividades para cada día
-                    	    for (var actividad in horariosGimnasio[dia])
-			    {
-                    	    	document.write("<td>" + horariosGimnasio[dia][actividad] + "</td>");
-                    	    }
+                            // Si no hay actividad para un día, colocamos una celda vacía
+                            var numActividades = Object.keys(horariosGimnasio[dia]).length;
+                            for (var i = numActividades; i < 5; i++) {
+                                document.write("<td></td>");
+                            }
 
-                   	    // Si no hay actividad para un día, colocamos una celda vacía
-                    	    var numActividades = Object.keys(horariosGimnasio[dia]).length;
-                    	    for (var i = numActividades; i < 5; i++)
-			    {
-                        	document.write("<td></td>");
-                    	    }
-
-                    	    document.write("</tr>");
-                	}
-
-            	</script>
-       		</table>
-    	     </div>
+                            document.write("</tr>");
+                        }
+                    </script>
+                </table>
+            </div>
         </section>
-	<br>
+        <br><br>
 
-	
+	<section id="actividades">
+            <h2>Actividades del Gimnasio</h2>
+	    <p>Consulta el listado de actividades que impartimos en nuestros gimnasios:</p>
+            <div class="container">
+                <div class="activity">Yoga</div>
+                <div class="activity">Pilates</div>
+                <div class="activity">Spinning</div>
+                <div class="activity">Boxeo</div>
+                <div class="activity">CrossFit</div>
+                <div class="activity">Zumba</div>
+                <div class="activity">Boxeo</div>
+                <div class="activity">Natación</div>
+                <div class="activity">Aeróbicos</div>
+                <div class="activity">Entrenamiento con TRX</div>
+                <div class="activity">Body Pump</div>
+                <div class="activity">TRX</div>
+                <div class="activity">Kickboxing</div>
+                <div class="activity">Bailes de Salón</div>
+                <div class="activity">Step</div>
+                <div class="activity">HIIT</div>
+                <div class="activity">Ciclismo Indoor</div>
+                <div class="activity">Baile Flamenco</div>
+                <div class="activity">Tai Chi</div>
+                <div class="activity">Entrenamiento Funcional</div>
+                <div class="activity">Estiramientos Orientales</div>
+                <div class="activity">Core Training</div>
+                <div class="activity">Running Club</div>
+                <div class="activity">Escalada</div>
+            </div>
+        </section>
 
-        <section id="calendario"> 
+        <section id="calendario">
             <div id="calendar">
-		<h2>Calendario de Clases</h2>
-	    </div>
-			<script src="script_calendar.js"></script>
-	</section>
+                <h2>Calendario de Clases</h2>
+            </div>
+            <script src="script_calendar.js"></script>
+        </section>
 
         <section id="contacto">
             <h2>Información de contacto</h2>
-   		
-        		<p><strong>Teléfono:</strong> +34 923294450 <br>
-        		   <strong>Dirección:</strong> Patio de Escuelas, 1, 37008 Salamanca</p>
-    			<a href="https://maps.app.goo.gl/HPt2ycSZfeN3to4D6" target="_blank">Google Maps</a>
-			&nbsp; &nbsp;<a href="https://maps.apple.com/?address=Plaza%20de%20los%20Ca%C3%ADdos%20s/n,%2037008%20Salamanca,%20Espa%C3%B1a&auid=4322209925457507477&ll=				40.960359,-5.670705&lsp=9902&q=Facultad%20De%20Ciencias&t=h" target="_blank">Apple Maps</a>
-				
-        		<p><br><strong>Redes sociales</strong></p>
-    			<p class="redes-sociales">
-        			<a href="https://www.facebook.com/universidaddesalamanca"><i class="fab fa-facebook-square"></i></a>
-        			<a href="https://x.com/usal?s=20"><i class="fab fa-twitter-square"></i></a>
-        			<a href="https://www.instagram.com/usal/?hl=es"><i class="fab fa-instagram-square"></i></a>    
-        			<a href="https://www.youtube.com/user/usalvideo"><i class="fab fa-youtube-square"></i></a>
-        			<a href="https://es.linkedin.com/school/universidad-de-salamanca/"><i class="fab fa-linkedin"></i></a>
-    		     	</p>
-  
+            <p><strong>Teléfono:</strong> +34 923294450 <br>
+                <strong>Dirección:</strong> Patio de Escuelas, 1, 37008 Salamanca</p>
+            <a href="https://maps.app.goo.gl/HPt2ycSZfeN3to4D6" target="_blank">Google Maps</a>
+            &nbsp; &nbsp;<a href="https://maps.apple.com/?address=Plaza%20de%20los%20Ca%C3%ADdos%20s/n,%2037008%20Salamanca,%20Espa%C3%B1a&auid=4322209925457507477&ll=40.960359,-5.670705&lsp=9902&q=Facultad%20De%20Ciencias&t=h" target="_blank">Apple Maps</a>
+
+            <p><br><strong>Redes sociales</strong></p>
+            <p class="redes-sociales">
+                <a href="https://www.facebook.com/universidaddesalamanca"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://x.com/usal?s=20"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/usal/?hl=es"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.youtube.com/user/usalvideo"><i class="fab fa-youtube-square"></i></a>
+                <a href="https://es.linkedin.com/school/universidad-de-salamanca/"><i class="fab fa-linkedin"></i></a>
+            </p>
         </section>
+
     </main>
 
     <footer>
         <p>YOUR GYM APP &copy; 2024<br>
-	Alejandro González ~ Adela Dans</p>
+            Alejandro González ~ Adela Dans</p>
     </footer>
 </body>
 </html>
-
